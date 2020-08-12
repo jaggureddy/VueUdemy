@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://unpkg.com/vue/dist/vue.js"> </script>
+</head>
+<body>
+    <div id='app'>
+        <!-- <button v-on:click="increase"> Increase </button>
+        <p> Counter : {{ counter }} </p>
+        <p> Result  : {{ result }} </p> -->
+
+        <button v-on:click="counter++"> Increase </button>
+        <button v-on:click="counter--"> Decrease </button>
+        <button v-on:click="secondCounter++"> Increase2 </button>
+
+        <p> Counter : {{ counter }} </p>
+        <p> Result  : {{ result() }} | {{ output }} </p>
+
+    </div>
+
+    <script src="Counter2.js"> </script>
+
+</body>
+</html>
